@@ -5,8 +5,6 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalWebApps.WebApp", "WebApp.PortalWebApps\PortalWebApps.WebApp.csproj", "{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalWebApps.Models", "PortalWebApps.Models\PortalWebApps.Models.csproj", "{EC18077A-17F5-433A-A2BA-76C7DB777036}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC18077A-17F5-433A-A2BA-76C7DB777036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC18077A-17F5-433A-A2BA-76C7DB777036}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC18077A-17F5-433A-A2BA-76C7DB777036}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC18077A-17F5-433A-A2BA-76C7DB777036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
