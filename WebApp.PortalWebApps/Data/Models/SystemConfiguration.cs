@@ -21,5 +21,8 @@ namespace PortalWebApps.WebApp.Data.Models
         [DisplayName("Valor")]
         [Required(ErrorMessage = "O campo {0} é obrigatório!")]
         public string Value { get; set; } = string.Empty;
+
+        [DisplayName("Status")]
+        public bool Status { get; set; }
     }
 }

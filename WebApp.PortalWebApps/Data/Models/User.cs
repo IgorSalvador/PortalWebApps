@@ -41,7 +41,7 @@ namespace PortalWebApps.WebApp.Data.Models
         public bool Status { get; set; } = false;
 
         [DisplayName("Senha")]
-        public byte[] Password { get; set; } 
+        public string Password { get; set; } 
 
         public User()
         {

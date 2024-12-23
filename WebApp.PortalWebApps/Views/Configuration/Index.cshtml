@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PortalWebApps.WebApp.Data.Models.SystemConfiguration>
+@{
+    ViewBag.Title = "Configurações de Sistema";
+    string message = TempData["Message"] as string ?? string.Empty, status = TempData["Status"] as string ?? string.Empty;
+}
+
+<div class="mb-3">
+    <div class="border-bottom border-secondary border-opacity-50 mb-3">
+        <h3>@ViewBag.Title</h3>
+    </div>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="mb-3">
+            <div class="alert alert-@status alert-dismissible fade show" role="alert">
+                @message
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+    <div class="mb-3">
+        @using (Html.BeginForm("Index", "Configuration", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="d-flex gap-1 mb-4">
+                <button class="btn btn-primary" type="submit">
+                    <i class="bi bi-save"></i> Salvar
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-counterclockwise"></i> Voltar ao menu
+                </a>
+            </div>
+
+            foreach (var item in Model)
+            {
+                <div class="mb-3 border-bottom border-secondary border-opacity-50">
+                    <div class="col-md-6">
+                        <input type="hidden" name="Id" id="Id" value="@item.Id" />
+
+                        <label class="form-label">@item.Name</label>
+
+                        @if (item.Value == "S" || item.Value == "N")
+                        {
+                            string check = item.Value == "S" ? "checked" : "";
+
+                            <div class="form-check form-switch">
+                                <input type="hidden" id="ConfigValue_@Html.Raw(item.Id)" name="ConfigValue_@Html.Raw(item.Id)" value="@item.Status.ToString()">
+                                <input class="form-check-input ClsCheck" @check type="checkbox" role="switch" id="bln_@Html.Raw(item.Id)" name="bln_@Html.Raw(item.Id)" value="@item.Status">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Ativar</label>
+                            </div>
+                        }
+                        else
+                        {
+                            <input type="text" class="form-control" name="ConfigValue_@Html.Raw(item.Id)" id="ConfigValue_@Html.Raw(item.Id)" value="@item.Value" />
+                        }
+                        @Html.ValidationMessage(item.Name, "", new { @class = "text-danger" })
+                        <p>Descrição: @item.Description</p>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $(".ClsCheck").on("click", function () {
+                var id = $(this).attr('name').split('_')[1];
+
+                if ($(this).is(':checked')) {
+                    $("#ConfigValue_" + id).attr('value', 'true');
+                }
+                else {
+                    $("#ConfigValue_" + id).attr('value', 'false');
+                }
+            });
+
+        });
+    </script>
+}

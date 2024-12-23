@@ -14,6 +14,7 @@ namespace PortalWebApps.WebApp.Data.Configurations
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasColumnType("VARCHAR(250)").IsRequired();
             builder.Property(x => x.Description).HasColumnType("VARCHAR(500)").IsRequired();
+            builder.Property(x => x.Status).IsRequired();
         }
     }
 }

@@ -13,6 +13,7 @@ namespace PortalWebApps.WebApp.Database
 
         public DbSet<SystemConfiguration> SystemConfigurations { get; set; }
         public DbSet<SystemConfigurationHistory> SystemConfigurationsHistory { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

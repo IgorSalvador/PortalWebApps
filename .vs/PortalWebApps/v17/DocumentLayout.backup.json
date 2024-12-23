@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Projetos\\PortalWebApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\configurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\configurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\configuration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\configuration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T16:19:06.778Z",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T06:51:42.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Program.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:08:16.185Z",
+              "WhenOpened": "2024-12-23T02:33:29.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAArAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAArwE8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T16:05:41.976Z",
+              "WhenOpened": "2024-12-23T02:25:50.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfigurationController.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:24:02.267Z",
               "EditorCaption": ""
             }
           ]

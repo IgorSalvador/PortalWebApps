@@ -17,7 +17,7 @@ namespace PortalWebApps.WebApp.Data.Configurations
             builder.Property(x => x.BirthDate).IsRequired();
             builder.Property(x => x.CreatedOn).IsRequired();
             builder.Property(x => x.Status).IsRequired();
-            builder.Property(x => x.Password).HasColumnType("VARBINARY(MAX)").IsRequired();
+            builder.Property(x => x.Password).HasColumnType("VARCHAR(MAX)").IsRequired();
         }
     }
 }

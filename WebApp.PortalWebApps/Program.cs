@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PortalWebApps.WebApp.Database;
+using PortalWebApps.WebApp.Models;
 using PortalWebApps.WebApp.Models.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 builder.Services.AddScoped<CookiesAccess>();
+builder.Services.AddScoped<Email>();
 
 var app = builder.Build();
 
