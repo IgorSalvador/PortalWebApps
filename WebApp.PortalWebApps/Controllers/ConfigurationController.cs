@@ -10,7 +10,7 @@ namespace PortalWebApps.WebApp.Controllers
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly CookiesAccess _cookies;
-
+        private const int pageSize = 10;
         public ConfigurationController(AppDbContext context, IConfiguration configuration, CookiesAccess cookies)
         {
             _context = context;
@@ -21,7 +21,7 @@ namespace PortalWebApps.WebApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(_context.SystemConfigurations.ToList());
+            return View(_context.SystemSettings.ToList());
         }
 
         [HttpPost, ValidateAntiForgeryToken]
@@ -33,19 +33,19 @@ namespace PortalWebApps.WebApp.Controllers
 
             for (int i = 0; i < idSystemSettings.Length; i++)
             {
-                var systemSetting = _context.SystemConfigurations.Find(int.Parse(idSystemSettings[i]))!;
+                var systemSetting = _context.SystemSettings.Find(int.Parse(idSystemSettings[i]))!;
 
                 string oldValue = systemSetting.Value;
                 string newValue = fc["ConfigValue_" + idSystemSettings[i]].ToString();
 
-                if (newValue == "True")
+                if (newValue.ToUpper() == "TRUE")
                 {
-                    systemSetting.Value = "S";
+                    systemSetting.Value = "True";
                     systemSetting.Status = true;
                 }
-                else if (newValue == "False")
+                else if (newValue.ToUpper() == "FALSE")
                 {
-                    systemSetting.Value = "N";
+                    systemSetting.Value = "False";
                     systemSetting.Status = false;
                 }
                 else
@@ -61,19 +61,75 @@ namespace PortalWebApps.WebApp.Controllers
                     _context.SaveChanges();
 
                     //Gravar no Histórico
-                    SystemConfigurationHistory history = new SystemConfigurationHistory();
+                    SystemSettingHistory history = new SystemSettingHistory();
                     history.Name = systemSetting.Name;
                     history.OldValue = oldValue;
                     history.NewValue = systemSetting.Value;
                     history.UserId = usuario!.Id;
                     history.ChangeDate = DateTime.Now;
 
-                    _context.SystemConfigurationsHistory.Add(history);
+                    _context.SystemSettingsHistory.Add(history);
                     _context.SaveChanges();
                 }
             }
 
-            return View(_context.SystemConfigurations.ToList());
+            return View(_context.SystemSettings.ToList());
+        }
+
+        [HttpGet]
+        public IActionResult SystemSettingsHistory(string fieldName, string startDate, string endDate, int page = 1)
+        {
+            var systemSettingsHistory = _context.SystemSettingsHistory.OrderByDescending(x => x.ChangeDate).ToList();
+            var users = _context.Users.ToList();
+
+            try
+            {
+                DateTime? startDateValue = DateTime.TryParse(startDate, out DateTime outStartDateValue) ? outStartDateValue : null;
+                DateTime? endDateValue = DateTime.TryParse(endDate, out DateTime outEndDateValue) ? outEndDateValue : null;
+
+                if (!string.IsNullOrEmpty(fieldName))
+                    systemSettingsHistory = systemSettingsHistory.Where(x => x.Name.Contains(fieldName)).ToList();
+
+                if(startDateValue.HasValue && endDateValue.HasValue)
+                {
+                    systemSettingsHistory = systemSettingsHistory
+                        .Where(x => x.ChangeDate.Date >= startDateValue && x.ChangeDate <= endDateValue).ToList();
+                }
+                else if(startDateValue.HasValue && !endDateValue.HasValue)
+                {
+                    systemSettingsHistory = systemSettingsHistory
+                        .Where(x => x.ChangeDate.Date >= startDateValue).ToList();
+                }
+                else if(!startDateValue.HasValue && endDateValue.HasValue)
+                {
+                    systemSettingsHistory = systemSettingsHistory
+                        .Where(x => x.ChangeDate <= endDateValue).ToList();
+                }
+
+                // Apply users on item
+                foreach (var item in  systemSettingsHistory)
+                {
+                    var user = users.FirstOrDefault(x => x.Id == item.UserId);
+
+                    if (user == null)
+                        continue;
+
+                    item.User = user;
+                }
+
+                ViewBag.Page = page;
+                ViewBag.TotalPages = Math.Ceiling((decimal)systemSettingsHistory.Count / pageSize);
+                ViewBag.Name = fieldName ?? string.Empty;
+                ViewBag.StartDate = startDateValue;
+                ViewBag.EndDate = endDateValue;
+            }
+            catch(Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+                TempData["Status"] = "danger";
+            }
+
+            return View(systemSettingsHistory.Skip((page - 1) * pageSize).Take(pageSize));
         }
     }
 }

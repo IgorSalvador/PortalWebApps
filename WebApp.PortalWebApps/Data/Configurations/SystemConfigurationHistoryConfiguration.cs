@@ -4,9 +4,9 @@ using PortalWebApps.WebApp.Data.Models;
 
 namespace PortalWebApps.WebApp.Data.Configurations
 {
-    public class SystemConfigurationHistoryConfiguration : IEntityTypeConfiguration<SystemConfigurationHistory>
+    public class SystemConfigurationHistoryConfiguration : IEntityTypeConfiguration<SystemSettingHistory>
     {
-        public void Configure(EntityTypeBuilder<SystemConfigurationHistory> builder)
+        public void Configure(EntityTypeBuilder<SystemSettingHistory> builder)
         {
             builder.ToTable("SystemConfigurationsHistory");
             builder.HasKey(x => x.Id);

@@ -1,6 +1,6 @@
 ﻿namespace PortalWebApps.WebApp.Data.Models
 {
-    public class SystemConfigurationHistory
+    public class SystemSettingHistory
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;

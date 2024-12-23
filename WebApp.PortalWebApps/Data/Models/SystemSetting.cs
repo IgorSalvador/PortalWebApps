@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PortalWebApps.WebApp.Data.Models
 {
-    public class SystemConfiguration
+    public class SystemSetting
     {
         [Key]
         public int Id { get; set; }

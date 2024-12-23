@@ -6,9 +6,9 @@ using System.Reflection.Emit;
 
 namespace PortalWebApps.WebApp.Data.Configurations
 {
-    public class SystemConfigurationConfiguration : IEntityTypeConfiguration<SystemConfiguration>
+    public class SystemSettingsConfiguration : IEntityTypeConfiguration<SystemSetting>
     {
-        public void Configure(EntityTypeBuilder<SystemConfiguration> builder)
+        public void Configure(EntityTypeBuilder<SystemSetting> builder)
         {
             builder.ToTable("SystemConfigurations");
             builder.HasKey(x => x.Id);

@@ -1,11 +1,11 @@
-﻿@model IEnumerable<PortalWebApps.WebApp.Data.Models.SystemConfiguration>
+﻿@model IEnumerable<PortalWebApps.WebApp.Data.Models.SystemSetting>
 @{
     ViewBag.Title = "Configurações de Sistema";
     string message = TempData["Message"] as string ?? string.Empty, status = TempData["Status"] as string ?? string.Empty;
 }
 
 <div class="mb-3">
-    <div class="border-bottom border-secondary border-opacity-50 mb-3">
+    <div class="border-bottom border-secondary border-opacity-50 mb-2">
         <h3>@ViewBag.Title</h3>
     </div>
 
@@ -24,11 +24,14 @@
         {
             @Html.AntiForgeryToken()
 
-            <div class="d-flex gap-1 mb-4">
-                <button class="btn btn-primary" type="submit">
+            <div class="d-flex border-bottom border-secondary border-opacity-50 pb-2 gap-1 mb-4">
+                <button class="btn btn-sm btn-primary px-3" type="submit">
                     <i class="bi bi-save"></i> Salvar
                 </button>
-                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                <a asp-controller="Configuration" asp-action="SystemSettingsHistory" class="btn btn-sm btn-dark px-3">
+                    <i class="bi bi-arrow-counterclockwise"></i> Histórico de Configurações
+                </a>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-sm btn-secondary px-3">
                     <i class="bi bi-arrow-counterclockwise"></i> Voltar ao menu
                 </a>
             </div>
@@ -41,9 +44,9 @@
 
                         <label class="form-label">@item.Name</label>
 
-                        @if (item.Value == "S" || item.Value == "N")
+                        @if (item.Value == "True" || item.Value == "False")
                         {
-                            string check = item.Value == "S" ? "checked" : "";
+                            string check = item.Value == "True" ? "checked" : "";
 
                             <div class="form-check form-switch">
                                 <input type="hidden" id="ConfigValue_@Html.Raw(item.Id)" name="ConfigValue_@Html.Raw(item.Id)" value="@item.Status.ToString()">
