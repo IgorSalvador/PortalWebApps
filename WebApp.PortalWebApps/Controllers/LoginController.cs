@@ -39,7 +39,9 @@ namespace PortalWebApps.WebApp.Controllers
 
             if (usuario == null)
             {
-                ViewData["Erro"] = "Usuário ou senha inválidos!";
+                TempData["Message"] = "Usuário ou senha inválidos!";
+                TempData["Status"] = "warning";
+
                 return View(login);
             }
 

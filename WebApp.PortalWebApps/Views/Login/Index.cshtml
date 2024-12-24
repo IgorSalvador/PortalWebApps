@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "LogIn";
     Layout = "_AuthLayout";
+    string message = TempData["Message"] as string ?? string.Empty, status = TempData["Status"] as string ?? string.Empty;
 }
 
 <div class="container-login">
@@ -10,6 +11,17 @@
             <h3 class="text-center title-login mb-3">LogIn</h3>
 
             <h5 class="text-center title-login">Bem-vindo ao Portal de WebApps, onde as aplicações são sua solução!</h5>
+
+            @if (!string.IsNullOrEmpty(message))
+            {
+                <div class="mb-3">
+                    <div class="alert alert-@status alert-dismissible fade show" role="alert">
+                        @message
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            }
+
             <div class="row mt-4">
                 <div class="mb-3">
                     <label asp-for="Username" class="form-label form-label-login">Usuário</label>

@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "D:\\Projetos\\PortalWebApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T13:42:16.094Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -48,87 +45,22 @@
               "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
               "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
               "RelativeToolTip": "WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA9wCYAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA/wBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T02:34:09.847Z",
+              "WhenOpened": "2024-12-24T13:32:47.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Services.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Services.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Models\\Services.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Services.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Models\\Services.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAoAAAA/AAAAAAAAAA==",
+              "Title": "Email.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Email.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Models\\Email.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Email.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Models\\Email.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T02:16:47.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Program.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T02:14:53.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T02:04:58.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_AuthLayout.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T01:40:59.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T01:40:16.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T01:39:30.266Z",
+              "WhenOpened": "2024-12-24T13:33:37.714Z",
               "EditorCaption": ""
             }
           ]
