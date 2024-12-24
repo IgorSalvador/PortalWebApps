@@ -12,8 +12,8 @@ using PortalWebApps.WebApp.Database;
 namespace PortalWebApps.WebApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241222155130_AddPasswordToUser")]
-    partial class AddPasswordToUser
+    [Migration("20241224170856_CreatingDataBase")]
+    partial class CreatingDataBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace PortalWebApps.WebApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemConfiguration", b =>
+            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemSetting", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,16 +41,19 @@ namespace PortalWebApps.WebApp.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(250)");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Value")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("SystemConfigurations", (string)null);
+                    b.ToTable("SystemSettings", (string)null);
                 });
 
-            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemConfigurationHistory", b =>
+            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemSettingHistory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,6 +63,9 @@ namespace PortalWebApps.WebApp.Migrations
 
                     b.Property<DateTime>("ChangeDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("ChangedBy")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -73,14 +79,11 @@ namespace PortalWebApps.WebApp.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(250)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ChangedBy");
 
-                    b.ToTable("SystemConfigurationsHistory", (string)null);
+                    b.ToTable("SystemSettingsHistory", (string)null);
                 });
 
             modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.User", b =>
@@ -112,9 +115,9 @@ namespace PortalWebApps.WebApp.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(250)");
 
-                    b.Property<byte[]>("Password")
+                    b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("VARBINARY(MAX)");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<int>("Profile")
                         .HasColumnType("int");
@@ -127,15 +130,20 @@ namespace PortalWebApps.WebApp.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
-            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemConfigurationHistory", b =>
+            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.SystemSettingHistory", b =>
                 {
                     b.HasOne("PortalWebApps.WebApp.Data.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithMany("SystemsSettingsHistory")
+                        .HasForeignKey("ChangedBy")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("PortalWebApps.WebApp.Data.Models.User", b =>
+                {
+                    b.Navigation("SystemsSettingsHistory");
                 });
 #pragma warning restore 612, 618
         }

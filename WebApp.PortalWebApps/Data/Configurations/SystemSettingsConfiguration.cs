@@ -10,7 +10,7 @@ namespace PortalWebApps.WebApp.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<SystemSetting> builder)
         {
-            builder.ToTable("SystemConfigurations");
+            builder.ToTable("SystemSettings");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasColumnType("VARCHAR(250)").IsRequired();
             builder.Property(x => x.Description).HasColumnType("VARCHAR(500)").IsRequired();

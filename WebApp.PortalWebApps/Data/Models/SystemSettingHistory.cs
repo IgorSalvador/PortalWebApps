@@ -7,7 +7,7 @@
         public string OldValue { get; set; } = string.Empty;
         public string NewValue { get; set; } = string.Empty;
         public DateTime ChangeDate { get; set; } = DateTime.Now;
-        public int UserId { get; set; } = 0;
+        public int ChangedBy { get; set; }
 
         public User User { get; set; } = null!;
     }

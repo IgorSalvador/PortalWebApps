@@ -65,7 +65,7 @@ namespace PortalWebApps.WebApp.Controllers
                     history.Name = systemSetting.Name;
                     history.OldValue = oldValue;
                     history.NewValue = systemSetting.Value;
-                    history.UserId = usuario!.Id;
+                    history.ChangedBy = usuario!.Id;
                     history.ChangeDate = DateTime.Now;
 
                     _context.SystemSettingsHistory.Add(history);
@@ -109,7 +109,7 @@ namespace PortalWebApps.WebApp.Controllers
                 // Apply users on item
                 foreach (var item in  systemSettingsHistory)
                 {
-                    var user = users.FirstOrDefault(x => x.Id == item.UserId);
+                    var user = users.FirstOrDefault(x => x.Id == item.ChangedBy);
 
                     if (user == null)
                         continue;

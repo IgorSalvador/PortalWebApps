@@ -14,10 +14,10 @@ namespace PortalWebApps.WebApp.Data.Configurations
             builder.Property(x => x.Email).HasColumnType("VARCHAR(250)").IsRequired();
             builder.Property(x => x.Cpf).HasColumnType("VARCHAR(14)").IsRequired();
             builder.Property(x => x.Profile).IsRequired();
+            builder.Property(x => x.Password).HasColumnType("VARCHAR(MAX)").IsRequired();
             builder.Property(x => x.BirthDate).IsRequired();
             builder.Property(x => x.CreatedOn).IsRequired();
             builder.Property(x => x.Status).IsRequired();
-            builder.Property(x => x.Password).HasColumnType("VARCHAR(MAX)").IsRequired();
         }
     }
 }

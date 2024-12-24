@@ -31,6 +31,9 @@ namespace PortalWebApps.WebApp.Data.Models
         [Range(1, int.MaxValue, ErrorMessage = "{0} inválido, selecione uma opção valida!")]
         public int Profile { get; set; } = 0;
 
+        [DisplayName("Senha")]
+        public string Password { get; set; }
+
         [DisplayName("Criado Em")]
         public DateTime CreatedOn { get; set; } = DateTime.Now;
 
@@ -40,8 +43,7 @@ namespace PortalWebApps.WebApp.Data.Models
         [DisplayName("Status")]
         public bool Status { get; set; } = false;
 
-        [DisplayName("Senha")]
-        public string Password { get; set; } 
+        public ICollection<SystemSettingHistory> SystemsSettingsHistory { get; set; }
 
         public User()
         {
