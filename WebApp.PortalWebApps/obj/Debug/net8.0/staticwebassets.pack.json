@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\PortalWebApps.WebApp.auzt0k46vu.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\authLogin.css",
+      "PackagePath": "staticwebassets\\css\\authLogin.css"
+    },
+    {
       "Id": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\images\\WebApps_Portal.png",
+      "PackagePath": "staticwebassets\\images\\WebApps_Portal.png"
     },
     {
       "Id": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\js\\site.js",

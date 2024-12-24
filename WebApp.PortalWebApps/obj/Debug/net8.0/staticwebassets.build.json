@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZYuCvFhJa1uAxm65dsXfMN3WuhXtRGswPRT/pn0jdKs=",
+  "Hash": "P3y42D7JZLtyZf0LEYJRriktmrc9QpqvaCYd30f+HgE=",
   "Source": "PortalWebApps.WebApp",
   "BasePath": "_content/PortalWebApps.WebApp",
   "Mode": "Default",
@@ -59,6 +59,27 @@
       "OriginalItemSpec": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortalWebApps.WebApp.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\authLogin.css",
+      "SourceId": "PortalWebApps.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\",
+      "BasePath": "_content/PortalWebApps.WebApp",
+      "RelativePath": "css/authLogin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "05n75az10r",
+      "Integrity": "5G1ppJ5mbpUMXZBgmkWP4B+TwOhQyqIT5rH1DlOAIeo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\authLogin.css"
+    },
+    {
       "Identity": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\site.css",
       "SourceId": "PortalWebApps.WebApp",
       "SourceType": "Discovered",
@@ -99,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\images\\WebApps_Portal.png",
+      "SourceId": "PortalWebApps.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\",
+      "BasePath": "_content/PortalWebApps.WebApp",
+      "RelativePath": "images/WebApps_Portal#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e8gvzowm2j",
+      "Integrity": "7kYw+hdE/mMmvIW51o5TrMFKRp2TOAT0UzeVPjjmXKU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\WebApps_Portal.png"
     },
     {
       "Identity": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\js\\site.js",
@@ -1321,6 +1363,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/authLogin.05n75az10r.css",
+      "AssetFile": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\authLogin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5G1ppJ5mbpUMXZBgmkWP4B+TwOhQyqIT5rH1DlOAIeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 02:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "05n75az10r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/authLogin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5G1ppJ5mbpUMXZBgmkWP4B+TwOhQyqIT5rH1DlOAIeo="
+        }
+      ]
+    },
+    {
+      "Route": "css/authLogin.css",
+      "AssetFile": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\authLogin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5G1ppJ5mbpUMXZBgmkWP4B+TwOhQyqIT5rH1DlOAIeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 02:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5G1ppJ5mbpUMXZBgmkWP4B+TwOhQyqIT5rH1DlOAIeo="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1481,6 +1605,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/WebApps_Portal.e8gvzowm2j.png",
+      "AssetFile": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\images\\WebApps_Portal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7kYw+hdE/mMmvIW51o5TrMFKRp2TOAT0UzeVPjjmXKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 01:56:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e8gvzowm2j"
+        },
+        {
+          "Name": "label",
+          "Value": "images/WebApps_Portal.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7kYw+hdE/mMmvIW51o5TrMFKRp2TOAT0UzeVPjjmXKU="
+        }
+      ]
+    },
+    {
+      "Route": "images/WebApps_Portal.png",
+      "AssetFile": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\wwwroot\\images\\WebApps_Portal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7kYw+hdE/mMmvIW51o5TrMFKRp2TOAT0UzeVPjjmXKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 01:56:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7kYw+hdE/mMmvIW51o5TrMFKRp2TOAT0UzeVPjjmXKU="
         }
       ]
     },

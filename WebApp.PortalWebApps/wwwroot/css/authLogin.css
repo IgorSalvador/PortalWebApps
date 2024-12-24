@@ -1,0 +1,62 @@
+﻿.body-bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/bg-home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-login {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-login {
+    margin-block: auto;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-login {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.form-container {
+    width: 500px;
+    padding: 50px;
+    background-color: #c9c9c9;
+    border-radius: 20px;
+    box-shadow: #000 10px 10px 46px;
+}
+
+.form-label-login {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.btn-login {
+    width: 100%;
+    padding-block: 10px;
+    background-color: #492156;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+@media (max-width: 560px) {
+    .card-login {
+        width: 400px;
+    }
+
+    .form-container {
+        width: 350px;
+    }
+}

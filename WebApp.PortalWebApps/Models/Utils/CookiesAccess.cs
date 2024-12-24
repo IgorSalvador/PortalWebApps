@@ -62,7 +62,7 @@ namespace PortalWebApps.WebApp.Models.Utils
         }
     }
 
-    public static class CurrentCookuies
+    public static class CurrentCookies
     {
         public static int UserId { get; set; } = 0;
         public static string Name { get; set; } = string.Empty;
@@ -72,6 +72,8 @@ namespace PortalWebApps.WebApp.Models.Utils
 
         public static void GetCookies(CookiesAccess cookies)
         {
+            cookies.Initialize();
+
             UserId = cookies.UserId;
             Name = cookies.Name;
             Email = cookies.Email;

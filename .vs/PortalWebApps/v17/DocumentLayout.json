@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\Projetos\\PortalWebApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\configurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\configurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\configuration\\systemsettingshistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\configuration\\systemsettingshistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\configuration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\configuration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\utils\\cookiesaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|d:\\projetos\\portalwebapps\\webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B741036-6894-4BD3-ABF3-C6EE05AAC86B}|WebApp.PortalWebApps\\PortalWebApps.WebApp.csproj|solutionrelative:webapp.portalwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T20:04:22.773Z",
+              "DocumentIndex": 2,
+              "Title": "CookiesAccess.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Models\\Utils\\CookiesAccess.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAkwE8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T02:34:09.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Services.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Services.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Models\\Services.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Models\\Services.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Models\\Services.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T19:57:01.605Z",
+              "WhenOpened": "2024-12-24T02:16:47.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Program.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Program.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T02:14:53.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SystemSettingsHistory.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\SystemSettingsHistory.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Configuration\\SystemSettingsHistory.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\SystemSettingsHistory.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Configuration\\SystemSettingsHistory.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAwG8AAAAFAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T19:52:16.551Z",
+              "WhenOpened": "2024-12-24T02:04:58.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T01:40:59.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T01:40:16.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConfigurationController.cs",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\ConfigurationController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwHQAAAAlAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApp.PortalWebApps\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:47:29.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\PortalWebApps\\WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
-              "RelativeToolTip": "WebApp.PortalWebApps\\Views\\Configuration\\Index.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T14:47:19.027Z",
+              "WhenOpened": "2024-12-24T01:39:30.266Z",
               "EditorCaption": ""
             }
           ]

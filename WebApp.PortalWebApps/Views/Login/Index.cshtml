@@ -1,0 +1,37 @@
+﻿@model PortalWebApps.WebApp.Models.GeneralModels.LoginModel
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "_AuthLayout";
+}
+
+<div class="container-login">
+    <div class="card-login">
+        <form asp-controller="Login" asp-action="Index" method="post" class="form-container bg-dark mt-3">
+            <h3 class="text-center title-login mb-3">LogIn</h3>
+
+            <h5 class="text-center title-login">Bem-vindo ao Portal de WebApps, onde as aplicações são sua solução!</h5>
+            <div class="row mt-4">
+                <div class="mb-3">
+                    <label asp-for="Username" class="form-label form-label-login">Usuário</label>
+                    <input asp-for="Username" class="form-control" autocomplete="off">
+                    <span asp-validation-for="Username" class="text-white"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Password" class="form-label form-label-login">Senha</label>
+                    <input asp-for="Password" type="password" class="form-control" autocomplete="off">
+                    <span asp-validation-for="Password" class="text-white"></span>
+                </div>
+
+                <div class="d-flex gap-2 mb-3">
+                    <button type="submit" class="btn btn-primary w-50">
+                        LogIn <i class="bi bi-box-arrow-in-right"></i>
+                    </button>
+                    <a class="btn btn-primary w-50">
+                        EntraId <i class="bi bi-microsoft"></i>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
