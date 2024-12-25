@@ -1,0 +1,148 @@
+﻿@model IEnumerable<PortalWebApps.WebApp.Data.Models.Application>
+@{
+    ViewBag.Title = "Aplicações";
+    string message = TempData["Message"] as string ?? string.Empty, status = TempData["Status"] as string ?? string.Empty;
+}
+
+<div class="mb-3">
+    <div class="border-bottom border-secondary border-opacity-50 mb-2">
+        <h3>@ViewBag.Title</h3>
+    </div>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="mb-3">
+            <div class="alert alert-@status alert-dismissible fade show" role="alert">
+                @message
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+    <div class="mb-3">
+        <form method="get">
+            <div class="row mb-3">
+                <div class="col-md-8">
+                    <label class="form-label" for="applicationName">Nome da Aplicação</label>
+                    <input id="applicationName" name="applicationName" class="form-control" type="text" value="@ViewBag.Name" autocomplete="off" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="status">Status</label>
+                    <select class="form-select" name="status" id="status">
+                        <!option value="" @(string.IsNullOrEmpty(ViewBag.Status) ? "selected" : string.Empty)>Todos</!option>
+                        <!option value="1" @(ViewBag.Status == "1" ? "selected" : string.Empty)>Ativo</!option>
+                        <!option value="2" @(ViewBag.Status == "0" ? "selected" : string.Empty)>Inátivo</!option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between border-bottom border-secondary border-opacity-50 pb-2 mb-4">
+                <div>
+                    <a class="btn btn-sm btn-success px-3" asp-controller="Application" asp-action="Create">
+                        <i class="bi bi-plus-lg"></i> Nova Aplicação
+                    </a>
+                </div>
+                <div class="d-flex justify-content-end gap-1 mb-4">
+                    <a asp-controller="Configuration" asp-action="Index" class="btn btn-sm btn-secondary px-3">
+                        <i class="bi bi-arrow-counterclockwise"></i> Voltar
+                    </a>
+                    <a asp-controller="Configuration" asp-action="SystemSettingsHistory" class="btn btn-sm btn-danger px-3">
+                        <i class="bi bi-x-lg"></i> Limpar
+                    </a>
+                    <button type="submit" class="btn btn-sm btn-primary px-3">
+                        <i class="bi bi-search"></i> Pesquisar
+                    </button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <!-- Applications -->
+    <div class="mb-3">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="fw-semibold" scope="col">#</th>
+                        <th class="fw-semibold" scope="col">Nome da aplicação</th>
+                        <th class="fw-semibold" scope="col">Status</th>
+                        <th class="fw-semibold" scope="col">Criada Em</th>
+                        <th class="fw-semibold" scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>
+                                    @if (item.Status)
+                                    {
+
+                                    }
+                                    else
+                                    {
+
+                                    }
+                                </td>
+                                <td>@item.CreatedOn.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td class="text-center" colspan="5">Nenhum registro encontrado!</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    @if (ViewBag.TotalPages > 0)
+    {
+        <div class="mb-3">
+            <ul class="pagination justify-content-end">
+                @if (ViewBag.Page > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SystemSettingsHistory", "Configuration", new { fieldName = ViewBag.Name, startDate = ViewBag.StartDate?.ToString("dd/MM/yyyy"), endDate = ViewBag.EndDate?.ToString("dd/MM/yyyy"), page = ViewBag.Page - 1 })">&laquo;</a>
+                    </li>
+                }
+                <li class="page-item page-link">Página @ViewBag.Page de @ViewBag.TotalPages</li>
+                @if (ViewBag.Page < ViewBag.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SystemSettingsHistory", "Configuration", new { fieldName = ViewBag.Name, startDate = ViewBag.StartDate?.ToString("dd/MM/yyyy"), endDate = ViewBag.EndDate?.ToString("dd/MM/yyyy"), page = ViewBag.Page + 1 })">&raquo;</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#startDate').datepicker({
+                uiLibrary: 'bootstrap5',
+                format: 'dd/mm/yyyy'
+            });
+
+            $('#endDate').datepicker({
+                uiLibrary: 'bootstrap5',
+                format: 'dd/mm/yyyy'
+            });
+        });
+    </script>
+}

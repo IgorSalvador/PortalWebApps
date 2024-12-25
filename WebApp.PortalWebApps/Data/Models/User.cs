@@ -44,7 +44,6 @@ namespace PortalWebApps.WebApp.Data.Models
         public bool Status { get; set; } = false;
 
         public ICollection<SystemSettingHistory> SystemsSettingsHistory { get; set; }
-        public ICollection<Application> Applications { get; set; }
 
         public User()
         {

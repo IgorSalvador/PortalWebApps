@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PortalWebApps.WebApp.Data.Models;
 using PortalWebApps.WebApp.Database;
 using PortalWebApps.WebApp.Models.Utils;
 
 namespace PortalWebApps.WebApp.Controllers
 {
+    [Authorize]
     public class ConfigurationController : Controller
     {
         private readonly AppDbContext _context;
