@@ -43,7 +43,7 @@
                     </a>
                 </div>
                 <div class="d-flex justify-content-end gap-1 mb-4">
-                    <a asp-controller="Configuration" asp-action="Index" class="btn btn-sm btn-secondary px-3">
+                    <a asp-controller="Application" asp-action="Index" class="btn btn-sm btn-secondary px-3">
                         <i class="bi bi-arrow-counterclockwise"></i> Voltar
                     </a>
                     <a asp-controller="Configuration" asp-action="SystemSettingsHistory" class="btn btn-sm btn-danger px-3">
@@ -84,15 +84,18 @@
                                 <td>
                                     @if (item.Status)
                                     {
-
+                                        <i class="bi bi-check-circle-fill text-success"></i>
                                     }
                                     else
                                     {
-
+                                        <i class="bi bi-x-circle-fill text-danger"></i>
                                     }
                                 </td>
                                 <td>@item.CreatedOn.ToString("dd/MM/yyyy HH:mm")</td>
                                 <td>
+                                    <a asp-asp-controller="Application" asp-action="Edit" asp-route-id="@item.Id" title="Editar">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </a>
                                 </td>
                             </tr>
                         }
@@ -116,14 +119,14 @@
                 @if (ViewBag.Page > 1)
                 {
                     <li class="page-item">
-                        <a class="page-link" href="@Url.Action("SystemSettingsHistory", "Configuration", new { fieldName = ViewBag.Name, startDate = ViewBag.StartDate?.ToString("dd/MM/yyyy"), endDate = ViewBag.EndDate?.ToString("dd/MM/yyyy"), page = ViewBag.Page - 1 })">&laquo;</a>
+                        <a class="page-link" href="@Url.Action("Index", "Application", new { applicationName = ViewBag.Name, status = ViewBag.Status, page = ViewBag.Page - 1 })">&laquo;</a>
                     </li>
                 }
                 <li class="page-item page-link">Página @ViewBag.Page de @ViewBag.TotalPages</li>
                 @if (ViewBag.Page < ViewBag.TotalPages)
                 {
                     <li class="page-item">
-                        <a class="page-link" href="@Url.Action("SystemSettingsHistory", "Configuration", new { fieldName = ViewBag.Name, startDate = ViewBag.StartDate?.ToString("dd/MM/yyyy"), endDate = ViewBag.EndDate?.ToString("dd/MM/yyyy"), page = ViewBag.Page + 1 })">&raquo;</a>
+                        <a class="page-link" href="@Url.Action("Index", "Application", new { applicationName = ViewBag.Name, status = ViewBag.Status, page = ViewBag.Page + 1 })">&raquo;</a>
                     </li>
                 }
             </ul>
@@ -134,15 +137,7 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            $('#startDate').datepicker({
-                uiLibrary: 'bootstrap5',
-                format: 'dd/mm/yyyy'
-            });
-
-            $('#endDate').datepicker({
-                uiLibrary: 'bootstrap5',
-                format: 'dd/mm/yyyy'
-            });
+            
         });
     </script>
 }

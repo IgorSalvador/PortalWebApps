@@ -29,7 +29,7 @@ namespace PortalWebApps.WebApp.Controllers
 
             try
             {
-                if(!string.IsNullOrEmpty(applicationName))
+                if (!string.IsNullOrEmpty(applicationName))
                     applications = applications.Where(x => x.Name.Contains(applicationName)).ToList();
 
                 if (!string.IsNullOrEmpty(status))
@@ -56,6 +56,43 @@ namespace PortalWebApps.WebApp.Controllers
         public IActionResult Create()
         {
             return View(new ApplicationViewModel());
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Create(ApplicationViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            try
+            {
+                if(_context.Applications.Any(x => x.Name == model.Name))
+                {
+                    ModelState.AddModelError("Name", "Aplicação já cadastrada! Favor verificar.");
+                    return View(model);
+                }
+
+                _context.Applications.Add(new Application
+                {
+                    Name = model.Name,
+                    Uri = model.Uri,
+                    KeyUserMail = model.KeyUserMail,
+                    KeyUserName = model.KeyUserName,
+                    CreatedOn = DateTime.Now,
+                    Status = true
+                });
+                _context.SaveChanges();
+
+                TempData["Message"] = $"Aplicação {model.Name} cadastrada com sucesso!";
+                TempData["Status"] = "primary";
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+                TempData["Status"] = "danger";
+            }
+
+            return RedirectToAction("Index", "Application");
         }
     }
 }

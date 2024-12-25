@@ -33,6 +33,37 @@
                     <i class="bi bi-arrow-counterclockwise"></i> Voltar
                 </a>
             </div>
+
+            <!-- Form Fields-->
+            <div class="mb-3">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="Name" class="form-label form-label-login">Nome</label>
+                        <input asp-for="Name" class="form-control" autocomplete="off">
+                        <span asp-validation-for="Name" class="text-white"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Uri" class="form-label form-label-login">Url</label>
+                        <input asp-for="Uri" class="form-control" autocomplete="off">
+                        <span asp-validation-for="Uri" class="text-white"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="KeyUserName" class="form-label form-label-login">Nome do Responsável</label>
+                        <input asp-for="KeyUserName" class="form-control" autocomplete="off">
+                        <span asp-validation-for="KeyUserName" class="text-white"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="KeyUserMail" class="form-label form-label-login">E-mail do Responsável</label>
+                        <input asp-for="KeyUserMail" class="form-control" autocomplete="off">
+                        <span asp-validation-for="KeyUserMail" class="text-white"></span>
+                    </div>
+                </div>
+            </div>
+
         }
     </div>
 </div>
