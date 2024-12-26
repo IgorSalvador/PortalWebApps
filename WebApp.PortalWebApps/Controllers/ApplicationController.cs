@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PortalWebApps.WebApp.Data.Models;
 using PortalWebApps.WebApp.Database;
 using PortalWebApps.WebApp.Models.Utils;
@@ -84,6 +85,57 @@ namespace PortalWebApps.WebApp.Controllers
                 _context.SaveChanges();
 
                 TempData["Message"] = $"Aplicação {model.Name} cadastrada com sucesso!";
+                TempData["Status"] = "primary";
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+                TempData["Status"] = "danger";
+            }
+
+            return RedirectToAction("Index", "Application");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int Id)
+        {
+            var application = _context.Applications.FirstOrDefault(x => x.Id == Id);
+
+            if(application == null)
+                return NotFound();
+
+            return View(new ApplicationViewModel(application));
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Edit(int Id, ApplicationViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            try
+            {
+                if (_context.Applications.Any(x => x.Name == model.Name && x.Id != Id))
+                {
+                    ModelState.AddModelError("Name", "Aplicação já cadastrada! Favor verificar.");
+                    return View(model);
+                }
+
+                var application = _context.Applications.FirstOrDefault(x => x.Id == Id);
+
+                if (application == null)
+                    return NotFound();
+
+                application.Name = model.Name;
+                application.Uri = model.Uri;
+                application.KeyUserMail = model.KeyUserMail;
+                application.KeyUserName = model.KeyUserName;
+                application.Status = model.Status;
+
+                _context.Entry(application).State = EntityState.Modified;
+                _context.SaveChanges();
+
+                TempData["Message"] = $"Aplicação {application.Name} alterada com sucesso!";
                 TempData["Status"] = "primary";
             }
             catch (Exception ex)

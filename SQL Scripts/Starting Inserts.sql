@@ -3,6 +3,7 @@ use dbPortalWebApps
 select * from SystemSettings
 select * from SystemSettingsHistory
 select * from Users
+select * from Applications
 
 insert into SystemSettings values ('SMTP Server','Servidor de SMTP responsável pelo envio de e-mails de aplicação','smtp.office365.com',0)
 insert into SystemSettings values ('SMTP Port','Porta de SMTP responsável pelo envio de e-mails de aplicação','587',0)

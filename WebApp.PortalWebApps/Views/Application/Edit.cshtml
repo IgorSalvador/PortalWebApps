@@ -1,0 +1,78 @@
+﻿@model PortalWebApps.WebApp.Models.ViewModels.ApplicationViewModel
+@{
+    ViewBag.Title = "Edição de Aplicações";
+    string message = TempData["Message"] as string ?? string.Empty, status = TempData["Status"] as string ?? string.Empty;
+}
+
+<div class="mb-3">
+    <div class="border-bottom border-secondary border-opacity-50 mb-2">
+        <h3>@ViewBag.Title</h3>
+    </div>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="mb-3">
+            <div class="alert alert-@status alert-dismissible fade show" role="alert">
+                @message
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+    <div class="mb-3">
+        @using (Html.BeginForm("Create", "Application", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+
+            <div class="d-flex gap-1 mb-4">
+                <button class="btn btn-sm btn-primary px-3" type="submit">
+                    <i class="bi bi-save"></i> Salvar
+                </button>
+                <a asp-controller="Application" asp-action="Index" class="btn btn-sm btn-secondary px-3">
+                    <i class="bi bi-arrow-counterclockwise"></i> Voltar
+                </a>
+            </div>
+
+            <!-- Form Fields-->
+            <div class="mb-3">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="Name" class="form-label form-label-login">Nome</label>
+                        <input asp-for="Name" class="form-control" autocomplete="off">
+                        <span asp-validation-for="Name" class="text-white"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Uri" class="form-label form-label-login">Url</label>
+                        <input asp-for="Uri" class="form-control" autocomplete="off">
+                        <span asp-validation-for="Uri" class="text-white"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label asp-for="KeyUserName" class="form-label form-label-login">Nome do Responsável</label>
+                        <input asp-for="KeyUserName" class="form-control" autocomplete="off">
+                        <span asp-validation-for="KeyUserName" class="text-white"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="KeyUserMail" class="form-label form-label-login">E-mail do Responsável</label>
+                        <input asp-for="KeyUserMail" class="form-control" autocomplete="off">
+                        <span asp-validation-for="KeyUserMail" class="text-white"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-check form-switch">
+                            <input asp-for="Status" class="form-check-input" role="switch" autocomplete="off">
+                            <label asp-for="Status" class="form-label form-label-login">Status</label>
+                        </div>
+                        <span asp-validation-for="Status" class="text-white"></span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
